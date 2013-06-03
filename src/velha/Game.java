@@ -23,7 +23,7 @@ public class Game {
 		}
 		
 		for (int i = 0; i < dimension; i++) {
-			for (int j = 0; j < 3; j++) {
+			for (int j = 0; j < dimension; j++) {
 				if(state[i][j] == 0){
 					state[i][j] = currentPlayer;
 					Integer nextPlayer = currentPlayer * -1;
