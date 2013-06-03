@@ -27,7 +27,7 @@ public class Game {
 				if(state[i][j] == 0){
 					state[i][j] = currentPlayer;
 					Integer nextPlayer = currentPlayer * -1;
-					Game newState = new Game(state.clone(), nextPlayer);
+					Game newState = new Game(clone(state), nextPlayer);
 					
 					gt.add(this);
 					GameTree ngt = gt.addChild(newState);
@@ -65,4 +65,17 @@ public class Game {
 		str += "]";
 		return str;
 	}
+	
+	
+        
+        public static Integer[][] clone(Integer[][] state){
+            Integer[][] clone = new Integer[dimension][dimension];
+            for (int i = 0; i < dimension; i++) {
+                for (int j = 0; j < dimension; j++) {
+                    clone[i][j] = state[i][j];
+                }
+            }
+            
+            return clone;
+        }
 }
