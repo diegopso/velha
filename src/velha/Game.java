@@ -43,8 +43,6 @@ public class Game {
 			}
 		}
 	}
-	
-	private Integer[] WinCount = new Integer[dimension * 2];
 
 	private boolean isThereAWinner() {
 		return Math.abs(state[0][0] + state[0][1] + state[0][2]) == 3 ||
