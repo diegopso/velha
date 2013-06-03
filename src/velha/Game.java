@@ -36,8 +36,6 @@ public class Game {
 						newState.play(ngt);
 					}
 					
-					System.out.println(toString());
-					
 					state[i][j] = 0;
 				}
 			}
