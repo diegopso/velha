@@ -24,6 +24,6 @@ public class Velha {
 		
 		GameTree gt = GameTree.getInstane();
 		
-		System.out.println("done!");
+		System.out.println(gt.findWinner(-1).toString());
 	}
 }
